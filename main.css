@@ -1,0 +1,61 @@
+/* Цвет текста  #2196F3; */
+/* Цвет основного текста #212121;*/
+/* Цвет адреса #757575; */
+/* Цвет h1  #FFFFFF; */
+/* #2F303A; */
+
+/* Основные стили документа */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color)
+}
+ul {
+    list-style-type: none;
+}
+/* Стили Шапки */
+.main-nav .nav-logo {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.main-nav .logo {
+    color: var(--accent-color);
+}
+
+.main-nav .nav-link {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.main-nav .nav-link:hover, 
+.main-nav .nav-link:focus {
+    color: var(--accent-color);
+}
+
+.adress-nav > .nav-link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.adress-nav > .nav-link:hover,
+.adress-nav > .nav-link:focus {
+    color: var(--accent-color);
+}
+
+/* Стиль Героя */
+.hero {
+    background-color: var(--secondary-background-color) ;
+}
+.hero > .hero-title {
+    color: var(--primary-background-color)
+}
+.button {
+    background-color:#2196F3;
+    color:#FFFFFF; 
+    text-decoration: none;
+}
