@@ -1,8 +1,9 @@
-/* Цвет текста  #2196F3; */
-/* Цвет основного текста #212121;*/
-/* Цвет адреса #757575; */
-/* Цвет h1  #FFFFFF; */
-/* #2F303A; */
+/* Цвет выделенного текста  #2196F3; */
+/* Цвет h2 h3 #212121;*/
+/* Цвет адреса и основного текста  #757575; */
+/* Цвет h1 и бэкграунда основного  #FFFFFF; */
+/* Цвет бэкграунда вторичного #2F303A;
+   Цвет бэкграунда кнопки Портфолио #F5F4FA; */
 
 /* Основные стили документа */
 :root {
@@ -11,6 +12,7 @@
     --accent-color: #2196F3;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #2F303A;
+    --primary-bcg-clr-btn: #F5F4FA;
 }
 
 body {
@@ -25,7 +27,7 @@ ul {
     color: var(--title-text-color);
     text-decoration: none;
 }
-.main-nav .logo {
+.logo {
     color: var(--accent-color);
 }
 
@@ -37,13 +39,28 @@ ul {
 .main-nav .nav-link:focus {
     color: var(--accent-color);
 }
+.main-nav .nav-link.current {
+    color: var(--accent-color);
+}
 
+/* 
 .adress-nav > .nav-link {
     color: var(--primary-text-color);
     text-decoration: none;
 }
 .adress-nav > .nav-link:hover,
 .adress-nav > .nav-link:focus {
+    color: var(--accent-color);
+}
+*/ /*Ниже сделал один стиль линка как для хедер адреса, так и для 
+футер адреса */
+
+.link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.link:hover, 
+.link:focus  {
     color: var(--accent-color);
 }
 
@@ -54,8 +71,44 @@ ul {
 .hero > .hero-title {
     color: var(--primary-background-color)
 }
-.button {
+.hero-button {
     background-color:#2196F3;
     color:#FFFFFF; 
     text-decoration: none;
+}
+/* Стиль Особенностей */
+
+.title {
+    color: var(--title-text-color);
+}
+.features.title {
+    visibility: hidden;
+}
+.features-list .item-title {
+    color: var(--title-text-color);
+}
+
+/* Стиль Команды */
+
+.team .item-title {
+    color: var(--title-text-color);
+}
+/* Стиль Подвала */
+
+.footer {
+    background-color:var(--secondary-background-color) ;
+}
+.footer > .link-logo,
+.footer > .footer-nav {
+    color:var(--primary-background-color);
+    text-decoration: none;
+}
+
+/* СТИЛЬ ВТОРОЙ СТРАНИЦЫ ПОРТФОЛИО */
+
+.button:hover,
+.button:focus  {
+color: var(--primary-background-color);
+background-color:var(--accent-color);
+cursor:pointer;
 }
