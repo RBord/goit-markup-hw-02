@@ -176,6 +176,7 @@ footer .link {
 /* СТИЛЬ ВТОРОЙ СТРАНИЦЫ ПОРТФОЛИО */
 
 .item-button {
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
